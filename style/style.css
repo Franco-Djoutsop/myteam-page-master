@@ -30,18 +30,19 @@ p{
 
 .container{
     display: grid;
-    position: relative;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
 }
-.photo-1,.photo-2,.photo-3,.photo-4,.photo-5,.photo-6{
-    
-}
+
 
 img{
     width: 200px;
     margin-left: 12px;
+    
+}
+.bloc{
+    position: relative;
 }
 
 .h-text{
@@ -63,6 +64,9 @@ img{
     transform: rotate(90deg);
     position: absolute;
     text-transform: uppercase;
+    right: -65px;
+    width: 200px;
+    top: 94px;
 }
 
 .photo-1{
@@ -81,38 +85,6 @@ img{
     margin-top: 30px;
 }
 
-.v-text-1{
-    width: 140px;
-    top: 106px;
-    left: 155px;
-}
-.v-text-2{
-    top: 167px;
-    left: 409px;
-    width: 122px;
-}
-.v-text-3{
-    top: 481px;
-    left: 179px;
-    width: 90px;
-}
-
-.v-text-4{
-    top: 548px;
-    left: 418px;
-    width: 100px;
-}
-.v-text-5{
-    top: 874px;
-    left: 194px;
-    width: 60px;
-}
-
-.v-text-6{
-    top: 947px;
-    left: 433px;
-    width: 70px;
-}
 
 footer{
     font-family: 'Montserrat', sans-serif;
@@ -141,32 +113,13 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 243px;
+        gap: 50px;
     }
     img{
         width: 250px;
     }
-
-    .v-text-1{
-        margin-left: 49px;
-    }
-    .v-text-2{
-        margin-left: 175px;
-    }
-    .v-text-3{
-        margin-left: 790px;
-        margin-top: -445px;
-    }
-    .v-text-4{
-        margin-left: -190px;
-        margin-top: 90px;
-    }
-    .v-text-5{
-        margin-left: 420px;
-        margin-top: -189px;
-    }
-    .v-text-6{
-        margin-left: 547px;
-        margin-top: -355px;
+    .v-text{
+        right: -113px;
     }
 
     .photo-4{
