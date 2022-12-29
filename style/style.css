@@ -7,7 +7,6 @@
 h1{
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    font-size: 24px;
     color: #000000;
     margin: 71px 0 0 12px;
 }
@@ -140,18 +139,19 @@ footer span,a{
 @media screen and (min-width:600px){
     h1{
         width: 300px;
-        margin: 110px 0 0 60px;
+        margin-top: 110px;
     }
     header{
         display: flex;
         margin-bottom: 100px;
+        justify-content: center;
     }
-    h2{
-        margin: 110px 0 0 30px;
-    }
+    /* h2{
+        margin: 110px 0 0 215px;
+    } */
     p{
-        margin: 10px 0 0 30px;
-        width: auto;
+        /* margin: 10px 0 0 215px; */
+        width: 280px;
         font-size: 14px;
 
     }
@@ -160,14 +160,14 @@ footer span,a{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         column-gap: 50px;
-        margin-left: 60px;
+        margin-left: 24px;
     }
     img{
-        width: 150px;
+        width: 200px;
     }
     .v-text{
         top: 22px;
-        left: 0px;
+        left: 52px;
     }
 
     .photo-4{
@@ -184,22 +184,22 @@ footer span,a{
 
 @media screen and (min-width:768px){
     img{
-        width: 170px;
+        width: 200px;
     }
     .v-text{
         top: 22px;
-        left: 20px;
+        left:53px;
     }
     h1{
-        font-size: 36px;
-        width: auto;
+        font-size: 34px;
     }
     h2{
         margin: 110px 0 0 139px;
+        font-size: 30px;
     }
     p{
         margin: 10px 0 0 139px;
-        width: 280px;
+        width: 279px;
     }
 }
 @media screen and (min-width:1024px){
