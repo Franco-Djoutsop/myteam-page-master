@@ -7,12 +7,13 @@
 h1{
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    size: 36px;
+    font-size: 24px;
     color: #000000;
-    margin: 71px 85px 0px 12px;
+    margin: 71px 0 0 12px;
 }
 h2{
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: 600;
     margin: 45px 0px 0px 12px;
     text-transform: uppercase;
@@ -21,11 +22,11 @@ h2{
 p{
     font-family: 'poppins',sans-serif;
     font-weight: 400;
-    size: 14px;
+    font-size: 14px;
     line-height: 21px;
     color: #000000;
     margin: 12px 0 0 12px;
-    width: 333px;
+    width: 265px;
 }
 
 .container{
@@ -37,7 +38,7 @@ p{
 
 
 img{
-    width: 200px;
+    width: 110px;
     margin-left: 12px;
     
 }
@@ -64,9 +65,10 @@ img{
     transform: rotate(90deg);
     position: absolute;
     text-transform: uppercase;
-    right: -75px;
+    left: 0;
     width: 200px;
-    top: 94px;
+    height: 78px;
+    top: 63px;
 }
 
 .photo-1{
@@ -92,35 +94,80 @@ footer{
     color: #A9A9A9;
     text-align: center;
     margin-top: 100px;
+    font-size: 10px;
+}
+footer span,a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #d60c0c;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 12px;
+    text-decoration: none;
 
+
+}
+
+@media screen and (min-width:375px){
+    img{
+        width: 150px;
+    }
+    .v-text{
+        height: 159px;
+        top: 22px;
+    }
+}
+@media screen and (min-width:540px){
+    img{
+        width: 220px;
+    }
+    .v-text{
+        top: 22px;
+        left: 70px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+        width: 369px    ;
+    }
 }
 
 @media screen and (min-width:600px){
     h1{
         width: 300px;
-        margin: 110px 0 0 113px;
+        margin: 110px 0 0 60px;
     }
     header{
         display: flex;
         margin-bottom: 100px;
     }
     h2{
-        margin: 110px 0 0 215px;
+        margin: 110px 0 0 30px;
     }
     p{
-        margin: 10px 0 0 215px;
+        margin: 10px 0 0 30px;
+        width: auto;
+        font-size: 14px;
+
     }
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin-left: 113px;
+        column-gap: 50px;
+        margin-left: 60px;
     }
     img{
-        width: 250px;
+        width: 150px;
     }
     .v-text{
-        left: 180px;
+        top: 22px;
+        left: 0px;
     }
 
     .photo-4{
@@ -135,3 +182,40 @@ footer{
     
 }
 
+@media screen and (min-width:768px){
+    img{
+        width: 170px;
+    }
+    .v-text{
+        top: 22px;
+        left: 20px;
+    }
+    h1{
+        font-size: 36px;
+        width: auto;
+    }
+    h2{
+        margin: 110px 0 0 139px;
+    }
+    p{
+        margin: 10px 0 0 139px;
+        width: 280px;
+    }
+}
+@media screen and (min-width:1024px){
+    img{
+        width: 250px;
+    }
+    .v-text{
+        top: 22px;
+        left: 101px;
+    }
+    h2{
+        margin: 110px 0 0 299px;
+    }
+    p{
+        margin: 10px 0 0 299px;
+        font-size: 18px;
+        width: 360px;
+    }
+}
