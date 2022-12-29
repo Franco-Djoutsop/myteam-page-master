@@ -64,7 +64,7 @@ img{
     transform: rotate(90deg);
     position: absolute;
     text-transform: uppercase;
-    right: -65px;
+    right: -75px;
     width: 200px;
     top: 94px;
 }
@@ -112,14 +112,11 @@ footer{
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         margin-left: 243px;
-        gap: 50px;
     }
     img{
         width: 250px;
-    }
-    .v-text{
-        right: -113px;
     }
 
     .photo-4{
