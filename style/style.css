@@ -129,10 +129,21 @@ footer span,a{
     }
     h2{
         font-size: 24px;
+        margin: 110px 0px 0px 12px;
     }
     p{
         font-size: 18px;
         width: 369px    ;
+    }
+
+    .left,.container{
+        margin-left: 200px;
+    }
+    /* header,.container{
+        margin-left: 35px;
+    } */
+    .right{
+        margin-left: 150px;
     }
 }
 
