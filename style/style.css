@@ -115,6 +115,9 @@ footer span,a{
         height: 159px;
         top: 22px;
     }
+    .container,header{
+        margin-left: 40px;
+    }
 }
 @media screen and (min-width:540px){
     img{
