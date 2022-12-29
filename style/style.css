@@ -97,7 +97,7 @@ footer{
 @media screen and (min-width:600px){
     h1{
         width: 300px;
-        margin: 110px 0 0 243px;
+        margin: 110px 0 0 113px;
     }
     header{
         display: flex;
@@ -113,10 +113,14 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin-left: 243px;
+        gap: 10px;
+        margin-left: 113px;
     }
     img{
         width: 250px;
+    }
+    .v-text{
+        left: 180px;
     }
 
     .photo-4{
