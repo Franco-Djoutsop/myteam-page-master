@@ -4,236 +4,172 @@
     box-sizing: border-box;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+}
 h1{
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 26px;
+    line-height: 47.7px;
     font-weight: 700;
     color: #000000;
-    margin: 71px 0 0 12px;
 }
 h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-family: 'poppins',serif;
+    margin-top: 36px;
     font-weight: 600;
-    margin: 45px 0px 0px 12px;
-    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
 }
-
 p{
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins',serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
+    margin-top: 10px;
     color: #000000;
-    margin: 12px 0 0 12px;
-    width: 265px;
+    margin-bottom: 70px;
+}
+.container,header{
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    margin-bottom: 100px;
+    align-items: center;
+    align-content: center;
 }
-
-
-img{
-    width: 110px;
-    margin-left: 12px;
-    
-}
-.bloc{
+.element{
     position: relative;
 }
-
-.h-text{
-    margin-top: 10px;
-    margin-left: 12px;
+.element-image{
+    overflow: hidden;
+}
+img{
+    width: 139px;
+    height: auto;
+    transition: .6s ease-in-out;
+}
+img:hover{
+    transform: scale(1.16);
+    filter: grayscale();
+}
+.translatey{
+    transform: translateY(-40px);
+}
+.element-infos-h{
     font-family: 'poppins',sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
     color: #000000;
-
 }
-.v-text{
-    font-family: 'Merriweather', serif;
+.element-infos-v{
+    font-family: 'montserrat',sans-serif;
     font-weight: 400;
-    size: 10px;
-    line-height: 13px;
-    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
     transform: rotate(90deg);
     position: absolute;
-    text-transform: uppercase;
-    left: 0;
+    right: -110px;
+    top: 94px;
     width: 200px;
-    height: 78px;
-    top: 63px;
+    height: auto;
+    text-transform: uppercase;
 }
-
-.photo-1{
-    margin-top: 43px;
-}
-.photo-2{
-    margin-top: 113px;
-}
-.photo-4{
-    margin-top: 60px;
-}
-.photo-5{
-    margin-top: -38px;
-}
-.photo-6{
-    margin-top: 30px;
-}
-header,.container{
-    margin-left: 25px;
-}
-
-
 footer{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #A9A9A9;
     text-align: center;
-    margin-top: 100px;
-    font-size: 10px;
-}
-footer span,a{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #d60c0c;
-    text-align: center;
-    margin-top: 100px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+    font-style: italic;
     font-size: 12px;
+    color: #000000;
+}
+footer a{
     text-decoration: none;
-
-
+    color: #e00d0d;
+    font-family: 'poppins',sans-serif;
+    font-size: 600;
 }
 
 @media screen and (min-width:375px){
-    img{
-        width: 150px;
+    .element-image img{
+        width: 155px;
     }
-    .v-text{
-        height: 159px;
-        top: 22px;
-    }
-    .container,header{
-        margin-left: 40px;
+}
+@media screen and (min-width:412px){
+    .element-image img{
+        width: 170px;
     }
 }
 @media screen and (min-width:540px){
-    img{
-        width: 220px;
+    .container{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 40px;
     }
-    .v-text{
-        top: 22px;
-        left: 70px;
+    .translatey{
+        transform: translateY(0);
+    }
+    .translate540{
+        transform: translateY(50px);
+    }
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 43em;
     }
     h1{
         font-size: 36px;
     }
     h2{
-        font-size: 24px;
-        /* margin: 110px 0px 0px 12px; */
+        margin-top: 0;
+        font-size: 25px;
     }
-    p{
-        font-size: 18px;
-        width: 369px    ;
-    }
-
-    .r
-}
-
-@media screen and (min-width:600px){
-    h1{
-        width: 300px;
+    .left{
+        width: 700px;
         margin-top: 110px;
     }
-    header{
-        display: flex;
-        margin-bottom: 100px;
-        justify-content: center;
-    }
-    h2{
-        margin: 110px 0px 0px 12px;
-    }
-    p{
-        /* margin: 10px 0 0 215px; */
-        width: 280px;
-        font-size: 14px;
-
-    }
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 50px;
-        margin-left: 24px;
-    }
-    img{
-        width: 200px;
-    }
-    .v-text{
-        top: 22px;
-        left: 52px;
-    }
-
-    .photo-4{
-        margin-top: 60px;
-    }
-    .photo-5{
-        margin-top: 128px;
-    }
-    .photo-6{
-        margin-top: 30px;
-    }
-    
-}
-
-@media screen and (min-width:768px){
-    header {
-        margin-left: 0;
-    }
     .right{
-        margin-left: 150px;
+        margin-top: 120px;
     }
-    img{
-        width: 200px;
-    }
-    .v-text{
-        top: 22px;
-        left:53px;
-    }
-    h1{
-        font-size: 34px;
-    }
-    h2{
-        margin: 110px 0 0 13px;
-        font-size: 30px;
-    }
-    p{
-        margin: 10px 0 0 13px;
-        width: 279px;
-    }
+    .element-image img{
+        width: 210px;
+
 }
 @media screen and (min-width:1024px){
-    img{
-        width: 250px;
+    .element-image img{
+        width: 280px;
     }
-    .v-text{
-        top: 22px;
-        left: 101px;
+    header{
+        width:60em;
+    }
+    h1{
+        font-size: 40px;
+        width: 9.5em;
     }
     h2{
-        margin: 110px 0 0 299px;
+        font-size: 40px;
     }
     p{
-        margin: 10px 0 0 299px;
-        font-size: 18px;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width:1200px){
+    .element-image img{
         width: 360px;
     }
-    .right {
-        margin-left: 0;
+    header{
+        width: 71em;
     }
+    .right{
+        margin-left: 110px;
+   }
+}
 }
