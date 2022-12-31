@@ -77,7 +77,7 @@ img:hover{
     line-height: 14px;
     transform: rotate(90deg);
     position: absolute;
-    right: -105px;
+    right: -110px;
     top: 94px;
     width: 200px;
     height: auto;
@@ -106,6 +106,11 @@ footer a{
 @media screen and (min-width:412px){
     .element-image img{
         width: 170px;
+    }
+}
+@media screen and (min-width:496px){
+    .element-image img{
+        width: 200px;
     }
 }
 @media screen and (min-width:540px){
@@ -142,7 +147,33 @@ footer a{
         width: 210px;
 
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:920px){
+    .element-image img{
+        width: 280px;
+    }
+        header{
+            width:60em;
+        }
+        h1{
+            font-size: 40px;
+            width: 9.5em;
+        }
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        header{
+            width: 71em;
+        }
+        .right{
+            margin-left: 110px;
+       }
+        
+}
+@media screen and (min-width:1100px){
     .element-image img{
         width: 280px;
     }
@@ -161,7 +192,7 @@ footer a{
         margin-top: 20px;
     }
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:1100px){
     .element-image img{
         width: 360px;
     }
@@ -171,5 +202,4 @@ footer a{
     .right{
         margin-left: 110px;
    }
-}
 }
